@@ -36,8 +36,8 @@ cc_library(
         'builtin_service.pb.cc',
     ],
     deps = [
+        '//thirdparty/boost:system',
         '//thirdparty/protobuf:protobuf',
-        '//thirdparty/boost:boost',
         '//thirdparty/glog:glog',
         '//thirdparty/snappy:snappy',
         ':rpc_option_proto',
